@@ -1,0 +1,289 @@
+.lumia {
+  width: 300px;
+  height: 550px;
+  position: relative;
+  border-radius: 2px;
+  overflow: visible;
+  background: #303132;
+  background: -webkit-linear-gradient(left, #303132, #303132 2px, #4f5051 10px, #303132 20px, #303132 280px, #4f5051 290px, #303132 298px, #303132);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -275px; }
+
+.lumia-dynamik {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  top: 8px;
+  left: 50%;
+  margin-left: -15px;
+  background: #1c1d1d;
+  box-shadow: rgba(255, 255, 255, 0.03) 0 0 0 1px, rgba(255, 255, 255, 0.05) 0 1px 0px;
+  border-radius: 3px;
+  overflow: hidden; }
+  .lumia-dynamik:after {
+    content: '';
+    background: #070707;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.03) 0 0 0 1px;
+    width: 96%;
+    height: 100%;
+    top: 50%;
+    left: 2%;
+    position: absolute; }
+
+.lumia-voise-up-btn,
+.lumia-voise-down-btn,
+.lumia-power-btn,
+.lumia-camera-btn {
+  width: 3px;
+  height: 45px;
+  position: absolute;
+  background: #fff;
+  right: -1px;
+  overflow: hidden; }
+
+.lumia-voise-up-btn {
+  top: 100px;
+  background: -webkit-linear-gradient(top, #202020, white 15%, white 95%, #cccccc 100%);
+  border-radius: 2px 0 2px 0 / 20%; }
+  .lumia-voise-up-btn:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    right: 0;
+    top: -2px; }
+
+.lumia-voise-down-btn {
+  top: 143px;
+  background: -webkit-linear-gradient(top, #cccccc, white 5%, white 85%, #202020 100%);
+  border-radius: 0 2px 0 2px / 20%; }
+  .lumia-voise-down-btn:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 2px; }
+
+.lumia-camera-btn,
+.lumia-power-btn {
+  top: 205px;
+  background: -webkit-linear-gradient(top, #202020, white 15%, white 85%, #202020 100%);
+  border-radius: 2px 0 0 2px / 20%; }
+  .lumia-camera-btn:before,
+  .lumia-power-btn:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    right: 0; }
+
+.lumia-camera-btn {
+  top: 400px; }
+
+.lumia-display {
+  background: #000000;
+  width: 276px;
+  height: 510px;
+  margin: 20px 12px;
+  border-radius: 13px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #000; }
+  .lumia-display:after, .lumia-display:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 506px;
+    background: #373737;
+    top: 2px;
+    z-index: 0;
+    box-shadow: inset 0 0 0 1px #000; }
+  .lumia-display:after {
+    border-radius: 10px/ 25px 70% 70% 25px;
+    left: 0; }
+  .lumia-display:before {
+    right: 0;
+    border-radius: 10px/ 70% 25px 25px 70%; }
+
+.lumia-loading-dot {
+  width: 2px;
+  height: 2px;
+  background: #1ca0e1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -1px;
+  margin-top: -1px;
+  -webkit-animation: lumia-loading-animation 5.5s cubic-bezier(0.42, 0, 0.58, 1) 0s infinite; }
+  .lumia-loading-dot:nth-child(1) {
+    margin-left: -11px;
+    -webkit-animation-delay: 0.8s; }
+  .lumia-loading-dot:nth-child(2) {
+    margin-left: -1px;
+    -webkit-animation-delay: 0.6s; }
+  .lumia-loading-dot:nth-child(3) {
+    margin-left: 9px;
+    -webkit-animation-delay: 0.4s; }
+  .lumia-loading-dot:nth-child(4) {
+    margin-left: 19px;
+    -webkit-animation-delay: 0.2s; }
+  .lumia-loading-dot:nth-child(5) {
+    margin-left: 29px;
+    -webkit-animation-delay: 0s; }
+
+@-webkit-keyframes lumia-loading-animation {
+  0% {
+    left: 50%;
+    top: 50%; }
+
+  10% {
+    top: 50%;
+    left: 110%; }
+
+  11% {
+    top: 110%;
+    left: 110%; }
+
+  12% {
+    top: 110%;
+    left: -10%; }
+
+  13% {
+    top: 50%;
+    left: -10%; }
+
+  40% {
+    top: 50%;
+    left: -10%; }
+
+  50%, 100% {
+    left: 50%;
+    top: 50%; } }
+
+.lumia-display-head {
+  color: #808080;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transform: scaleY(0.8);
+  -moz-transform: scaleY(0.8);
+  transform: scaleY(0.8);
+  line-height: 30px; }
+
+.lumia-display-footer {
+  position: absolute;
+  bottom: 50px;
+  padding: 0 30px;
+  width: 216px; }
+
+.lumia-icon-back {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  border-left: 1px #808080 solid;
+  border-bottom: 1px #808080 solid;
+  box-shadow: inset 1px -1px 0 #808080;
+  width: 11px;
+  height: 11px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  .lumia-icon-back:before {
+    content: '';
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 15px;
+    height: 2px;
+    background: #808080;
+    left: -2px;
+    top: 35%; }
+
+.lumia-icon-home {
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 0px;
+  margin-left: -8px;
+  position: absolute;
+  -webkit-transform: skew(-15deg); }
+
+.lumia-icon-home-window {
+  width: 7px;
+  height: 7px;
+  background: #808080;
+  float: left;
+  margin: 0 1px 1px 0;
+  position: relative; }
+  .lumia-icon-home-window:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    border-radius: 3px / 50%; }
+  .lumia-icon-home-window:nth-child(2):after {
+    width: 110%;
+    left: -5%;
+    background: #000;
+    top: -4px; }
+  .lumia-icon-home-window:nth-child(3):after {
+    width: 110%;
+    left: -5%;
+    background: #000;
+    bottom: -4px; }
+  .lumia-icon-home-window:nth-child(2):before, .lumia-icon-home-window:nth-child(3):before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #808080;
+    position: absolute;
+    border-radius: 3px / 50%; }
+  .lumia-icon-home-window:nth-child(2) {
+    z-index: 3; }
+  .lumia-icon-home-window:nth-child(2):before {
+    bottom: -2px;
+    left: 0;
+    border-bottom: 1px #000 solid; }
+  .lumia-icon-home-window:nth-child(3):before {
+    top: -2px;
+    right: 0;
+    border-top: 1px #000 solid; }
+  .lumia-icon-home-window:nth-child(1):after {
+    width: 100%;
+    left: 0;
+    top: -1px;
+    background: #808080; }
+  .lumia-icon-home-window:nth-child(4):after {
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    background: #808080; }
+
+.lumia-icon-search {
+  position: absolute;
+  border: 2px #808080 solid;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  right: 40px;
+  top: 0; }
+  .lumia-icon-search:before {
+    content: '';
+    width: 7px;
+    height: 2px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #808080;
+    position: absolute;
+    left: -5px;
+    top: 11px; }
