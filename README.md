@@ -1,4 +1,4 @@
 Lumia.js
 ========
 
-Imagelerr Lumia 800
+Imageless Lumia 800
