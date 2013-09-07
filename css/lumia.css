@@ -5,7 +5,8 @@
   border-radius: 2px;
   overflow: visible;
   background: #303132;
-  background: -webkit-linear-gradient(left, #303132, #303132 2px, #4f5051 10px, #303132 20px, #303132 280px, #4f5051 290px, #303132 298px, #303132); }
+  background: -webkit-linear-gradient(left, #303132, #303132 2px, #4f5051 10px, #303132 20px, #303132 280px, #4f5051 290px, #303132 298px, #303132);
+  background: linear-gradient(to right, #303132, #303132 2px, #4f5051 10px, #303132 20px, #303132 280px, #4f5051 290px, #303132 298px, #303132); }
 
 .lumia-dynamik {
   position: absolute;
@@ -43,6 +44,7 @@
 .lumia-voise-up-btn {
   top: 100px;
   background: -webkit-linear-gradient(top, #202020, white 15%, white 95%, #cccccc 100%);
+  background: linear-gradient(to bottom, #202020, white 15%, white 95%, #cccccc 100%);
   border-radius: 2px 0 2px 0 / 20%; }
   .lumia-voise-up-btn:before {
     content: '';
@@ -56,6 +58,7 @@
 .lumia-voise-down-btn {
   top: 143px;
   background: -webkit-linear-gradient(top, #cccccc, white 5%, white 85%, #202020 100%);
+  background: linear-gradient(to bottom, #cccccc, white 5%, white 85%, #202020 100%);
   border-radius: 0 2px 0 2px / 20%; }
   .lumia-voise-down-btn:before {
     content: '';
@@ -70,6 +73,7 @@
 .lumia-power-btn {
   top: 205px;
   background: -webkit-linear-gradient(top, #202020, white 15%, white 85%, #202020 100%);
+  background: linear-gradient(to bottom, #202020, white 15%, white 85%, #202020 100%);
   border-radius: 2px 0 0 2px / 20%; }
   .lumia-camera-btn:before,
   .lumia-power-btn:before {
@@ -359,7 +363,9 @@
   top: 0px;
   margin-left: -8px;
   position: absolute;
-  -webkit-transform: skew(-15deg); }
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(-15deg);
+  transform: skew(-15deg); }
 
 .lumia-icon-home-window {
   width: 7px;
@@ -477,7 +483,9 @@
   position: absolute;
   top: 6px;
   left: 100px;
-  -webkit-transform: scale(0.8); }
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8); }
   .lumia-icon-wifi:before {
     content: '';
     position: absolute;
@@ -538,7 +546,7 @@
   border: 2px #fefcfb solid;
   border-radius: 10px;
   bottom: 10px;
-  right: 22px;
+  right: 15px;
   overflow: hidden;
   opacity: .9; }
   .lumia-icon-go2apps:before {
@@ -547,10 +555,10 @@
     width: 100%;
     height: 100%;
     left: 0;
-    top: 0;
+    top: -1px;
     line-height: 17px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 200;
     text-align: center;
     position: absolute; }
 
@@ -586,13 +594,19 @@
     height: 3px;
     top: -30%;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-    -webkit-transform: skale(0.8); }
+    -webkit-transform: skale(0.8);
+    -moz-transform: skale(0.8);
+    transform: skale(0.8); }
   .lumia-lockscreen-time-icon:after {
     right: -20%;
-    -webkit-transform: scale(0.8) rotate(30deg); }
+    -webkit-transform: scale(0.8) rotate(30deg);
+    -moz-transform: scale(0.8) rotate(30deg);
+    transform: scale(0.8) rotate(30deg); }
   .lumia-lockscreen-time-icon:before {
     left: -25%;
-    -webkit-transform: scale(0.8) rotate(-30deg); }
+    -webkit-transform: scale(0.8) rotate(-30deg);
+    -moz-transform: scale(0.8) rotate(-30deg);
+    transform: scale(0.8) rotate(-30deg); }
   .lumia-lockscreen-time-icon i {
     position: absolute;
     left: 43%;
@@ -747,9 +761,13 @@
     border-radius: 3px; }
   .lumia-i-email:after {
     -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    transform: rotate(40deg);
     left: -5px; }
   .lumia-i-email:before {
     -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    transform: rotate(-40deg);
     right: -6px; }
 
 .lumia-i-calendar {
