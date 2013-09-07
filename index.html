@@ -1,13 +1,138 @@
-<!Doctype html>
+<!doctype html>
 <html>
-    
-    <head>
-        <title>Lumia.js</title>
-        <link href="css/lumia.css" rel="stylesheet" type="text/css" />
-    </head>
-    
-    <body>
-        <script data-main="js/main.js" src="js/require.js"></script>
-    </body>
+<head>
+	<meta charset="utf-8">
+	<title>Imageless Lumia 800</title>
 
+	<meta property="og:title" content="Imageless Lumia 800 in CSS3!"/>
+	<meta property="og:image" content="img/lumia.js"/>
+	<meta property="og:description" content="Imageless Lumia 800 in CSS3! This rendering of Lumia 800 and its icons were made in pure CSS3. No images, no base64, no SVG, no canvas, just a lot of CSS3 lines of CSS code and a little bit of Javascript code (with jQuery, of course)."/>
+
+	<meta itemprop="name" content="Imageless Lumia 800 in CSS3!">
+	<meta itemprop="image" content="img/lumia.js">
+	<meta itemprop="description" content="Imageless Lumia 800 in CSS3! This rendering of Lumia 800 and its icons were made in pure CSS3. No images, no base64, no SVG, no canvas, just a lot of CSS3 lines of CSS code and a little bit of Javascript code (with jQuery, of course).">
+
+	<link href="css/page.css" rel="stylesheet" type="text/css"/>
+	<link href="css/lumia.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function ( d, s, id ){
+	var js, fjs = d.getElementsByTagName( s )[0];
+	if ( d.getElementById( id ) ) return;
+	js = d.createElement( s );
+	js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=202781623089747";
+	fjs.parentNode.insertBefore( js, fjs );
+}( document, 'script', 'facebook-jssdk' ));</script>
+
+<div class="main-container">
+
+	<div class="lumia-container"></div>
+
+	<div class="lumia-description">
+		<h1>Imageless Lumia 800</h1>
+		<div class="block-description made_by">
+			<h3>Made by <a href="http://tjrus.com/">TjRus</a></h3>
+			<div class="btn-follow">
+				<a href="https://twitter.com/TjRus" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @TjRus</a>
+			</div>
+			<table>
+				<tr>
+					<td><a href="http://github.com/TjRus/Lumia.js">GitHub repo</a>:</td>
+					<td>
+						<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=TjRus&repo=Lumia.js&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="130" height="20"></iframe>
+					</td>
+					<td>
+						<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=TjRus&repo=Lumia.js&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="130" height="20"></iframe>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="block-description">
+			<h3>Share:</h3>
+			<div class="facebook_like">
+				<div class="fb-like" data-href="http://tjrus.com/lumia" data-send="false" data-layout="button_count" data-width="55" data-show-faces="false" data-font="lucida grande"></div>
+			</div>
+			<div class="twitter">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tjrus.com/lumia" data-counturl="http://tjrus.com/lumia" data-text="Imageless Lumia 800 in pure CSS! Awesome creation!" data-via="TjRus" data-lang="en">Tweet</a>
+				<script>!function ( d, s, id ){
+					var js, fjs = d.getElementsByTagName( s )[0];
+					if ( !d.getElementById( id ) ) {
+						js = d.createElement( s );
+						js.id = id;
+						js.src = "//platform.twitter.com/widgets.js";
+						fjs.parentNode.insertBefore( js, fjs );
+					}
+				}( document, "script", "twitter-wjs" );</script>
+			</div>
+			<div class="google_plus">
+				<div class="g-plusone" data-size="medium" data-href="http://tjrus.com/lumia"></div>
+				<script type="text/javascript">
+					(function (){
+						var po = document.createElement( 'script' );
+						po.type = 'text/javascript';
+						po.async = true;
+						po.src = 'https://apis.google.com/js/plusone.js';
+						var s = document.getElementsByTagName( 'script' )[0];
+						s.parentNode.insertBefore( po, s );
+					})();
+				</script>
+			</div>
+			<br class="clear"/>
+		</div>
+
+		<div class="block-description">
+			<h3>Description:</h3>
+			<p>This rendering of Lumia 800 and its icons were made in pure CSS3. No images, no base64, no SVG, no canvas, just a lot of CSS3 lines of CSS code and a little bit of Javascript code (with jQuery, of course).</p>
+			<p>Viewed best with the latest versions of Safari and Chrome in Mac OS X.</p>
+		</div>
+
+		<div class="block-description">
+			<h3>Lumia features (like in a real phone):</h3>
+			<ul class="list">
+				<li>Phone states: lock, on, off;</li>
+				<li>Unlock screen animation;</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<br class="clear">
+
+	<div class="block-description">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'lumiajs',
+					disqus_title = 'Imageless Lumia 800',
+					disqus_url = 'http://tjrus.com/lumia';
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function (){
+				var dsq = document.createElement( 'script' );
+				dsq.type = 'text/javascript';
+				dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName( 'head' )[0] || document.getElementsByTagName( 'body' )[0]).appendChild( dsq );
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the
+			<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<div class="block-description block-copy">
+		&copy; TjRus
+	</div>
+	<br/>
+</div>
+
+
+<script data-main="js/main.js" src="js/require.js"></script>
+<script> if ( window != top ) top.location.href = location.href </script>
+
+</body>
 </html>
