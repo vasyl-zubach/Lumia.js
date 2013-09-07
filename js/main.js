@@ -4,7 +4,7 @@ require.config({
 	paths: {
 		'jquery.easing': 'jquery.easing',
 		jquery: 'jquery',
-		lumia: 'Lumia'
+		lumia: 'lumia'
 	},
 	shim: {
 		lumia: ['jquery.easing'],
