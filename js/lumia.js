@@ -75,8 +75,11 @@ define( [
 
 		self.time();
 
-		self[self.status]();
 		self.unlockInitiate();
+
+		setTimeout( function (){
+			self[self.status]();
+		}, 600 );
 
 		self.inited = true;
 		return self;
@@ -163,7 +166,7 @@ define( [
 			var $this = $( this ),
 				mouse_top = self.is_mobile ? e.originalEvent.touches[0].clientY : e.clientY;
 
-			$lockscreen.off( evnt.move, move_lockscreen ).on( evnt.move, function move_lockscreen ( e ){
+			$lockscreen.off( evnt.move, move_lockscreen ).on( evnt.move, function move_lockscreen( e ){
 				var diff = (self.is_mobile ? e.originalEvent.touches[0].clientY : e.clientY) - mouse_top;
 				if ( diff > 0 ) {
 					diff = 0;
@@ -176,7 +179,7 @@ define( [
 				} );
 			} );
 
-			$lockscreen.off( evnt.end, up_on_lockscreen ).on( evnt.end, function up_on_lockscreen (){
+			$lockscreen.off( evnt.end, up_on_lockscreen ).on( evnt.end, function up_on_lockscreen(){
 				var $this = $( this );
 				$lockscreen.off( evnt.move, move_lockscreen );
 				self.endSlide();
